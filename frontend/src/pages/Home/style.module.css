@@ -1,0 +1,66 @@
+.container {
+  display: flex;
+  height: 100vh;
+  background-color: white;
+  font-family: Arial, sans-serif;
+}
+
+
+
+/* Conteúdo principal */
+.content {
+  flex: 1;
+  padding: 20px;
+  color: #0b1f44;
+}
+
+.content h1 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.content p {
+  font-size: 1.05rem;
+  color: #333;
+}
+.content {
+  flex: 1;
+  position: relative;
+  padding: 40px;
+  color: #0b1f44;
+  background-size: 55%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: #f7f7f7; /* cor de fundo clara */
+}
+
+.overlay {
+  position: relative;
+  z-index: 2;
+}
+
+.content::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: rgba(255, 255, 255, 0.85); /* leve transparência sobre o fundo */
+  z-index: 1;
+}
+/* Estilo dos links do menu */
+.menu li a {
+  color: inherit;              /* herda a cor branca do .sidebar */
+  text-decoration: none;       /* remove o sublinhado */
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* mesma fonte padrão do sistema */
+  font-size: 1rem;
+  font-weight: 500;
+  display: block;              /* faz o link ocupar todo o espaço do <li> */
+  width: 100%;
+}
+
+/* Mantém o hover bonito mesmo com Link */
+.menu li a:hover {
+  color: #ffffff;              /* mantém o texto branco */
+  text-decoration: none;
+}
+
+
