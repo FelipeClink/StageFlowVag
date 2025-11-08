@@ -1,8 +1,6 @@
-
 /* Sidebar */
 .sidebar {
   width: 250px;
-  height: 100vh;
   background-color: #0b1f44; /* azul escuro */
   color: white;
   display: flex;
@@ -17,15 +15,14 @@
   justify-content: center;
   align-items: center;
   padding-top: 15px;
-  padding-bottom: 35px; /* espaçamento extra abaixo da logo */
+  padding-bottom: 35px;
 }
 
 .institutionLogo {
-  width: 180px; /* aumentada */
+  width: 180px;
   height: auto;
   object-fit: contain;
 }
-
 
 /* Menu */
 .menu {
@@ -37,12 +34,21 @@
 .menu li {
   padding: 14px 16px;
   text-align: left;
-  cursor: pointer;
-  transition: background 0.2s;
   border-radius: 6px;
   margin: 6px 6px;
+  transition: background 0.2s;
 }
 
+/* Links do menu */
+.menu li a {
+  color: white;
+  text-decoration: none; /* remove sublinhado */
+  font-weight: 500;
+  display: block;
+  width: 100%;
+}
+
+/* Hover */
 .menu li:hover {
   background-color: rgba(255, 255, 255, 0.1);
 }
@@ -100,20 +106,4 @@
 .logoutBtn:hover {
   background-color: #c92a36;
   transform: translateY(-1px);
-}
-/* Estilo dos links do menu */
-.menu li a {
-  color: inherit;              /* herda a cor branca do .sidebar */
-  text-decoration: none;       /* remove o sublinhado */
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* mesma fonte padrão do sistema */
-  font-size: 1rem;
-  font-weight: 500;
-  display: block;              /* faz o link ocupar todo o espaço do <li> */
-  width: 100%;
-}
-
-/* Mantém o hover bonito mesmo com Link */
-.menu li a:hover {
-  color: #ffffff;              /* mantém o texto branco */
-  text-decoration: none;
 }
